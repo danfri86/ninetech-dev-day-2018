@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true, // Allow default import when there's no default export
+    "experimentalDecorators": true, // Needed for MobX
+    "jsx": "react", // Enable jsx. Babel will take care of it
+    "lib": ["es6", "dom"],
+    "module": "esnext", // es6 = Use ES2015 modules. commonjs required by react-hot-loader
+    // "outDir": "dist", // output directory to build to (irrelevant because we use Webpack most of the time)
+    "removeComments": true,
+    "moduleResolution": "node", // This allows Typescript to load type declarations supplied alongside npm packages
+    // "baseUrl": "client/app",
+    "sourceMap": true, // make TypeScript generate sourcemaps
+    "target": "es5",
+    "strict": false // turns on/off noImplicitAny and strictNullChecks etc.
+  },
+  "exclude": ["node_modules"]
+}
